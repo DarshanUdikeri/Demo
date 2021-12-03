@@ -1,11 +1,11 @@
-#include <limits.h>
-#include <stdio.h>
-#include<iostream>
+ #include <limits.h>
+#include <iostream>
+using namespace std;
 #define V 6
-
 
 class Dijkstra{
 	public:
+	string city[V] = {"Nashik    ","Pune      ","Mumbai    ","Aurangabad","Solapur   ","Kolhapur  "};
 	int minDistance(int dist[], bool set[]);
 	int print(int dist[], int n);
 	void dijkstra(int graph[V][V], int src);
@@ -24,9 +24,10 @@ int Dijkstra::minDistance(int dist[], bool set[])
 
 int Dijkstra::print(int dist[], int n)
 {
-	printf("Vertex Distance from Source\n");
-	for (int i = 0; i < V; i++)
-		printf("%d \t\t %d\n", i, dist[i]);
+	cout << "Vertex        Distance from Source" << endl;
+	for (int i = 0; i < V; i++){
+		cout << city[i] << "\t\t" << dist[i] << endl;
+	}
 }
 
 void Dijkstra::dijkstra(int graph[V][V], int src)

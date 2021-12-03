@@ -1,25 +1,3 @@
-// #include <iostream>
-// using namespace std;
-// #define I 65535
-
-// struct Edge{
-//     int U,V,wt;
-// };
-
-// class graph{
-//     int v=0, e;
-//     int weight[20][20];
-//     int visited[20], d[20], p[20];
-//     Edge edge[20];
-//     public:
-//     graph();
-//     void create_graph();
-//     void prim();
-//     void sortg();
-//     void kruskals();
-// };
-
-
 #include<iostream>
 #include<string.h>
 using namespace std;

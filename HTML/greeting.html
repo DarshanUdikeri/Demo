@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greetings</title>
+</head>
+<body>
+    Name: <input type="text" value="Darshan">
+    <button>Greet me</button>
+    <div class="message">
+        
+    </div>
+    <script>
+        let input = document.querySelector('input');
+        let button = document.querySelector('button');
+        let message = document.querySelector('.message');
+
+        button.addEventListener("click",displayMessage);
+        function displayMessage(){
+            name = input.value;
+            message.innerText = `Hello ${name}`
+        }
+
+        function greet(){
+            let hours = new Date().getHours();
+            if(hours < 12){
+                return "Good morning";
+            }
+            else if(hours <18){
+                return "Good Afternoon";
+            }
+            else{
+                return "Good Evening";
+            }
+        }
+    </script>
+</body>
+</html>

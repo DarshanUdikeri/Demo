@@ -1,4 +1,4 @@
-cout << "Enter the elements: ";
-    // for(int i=0;i<=MAX;i++){
-    //     cin >> a[i];
-    // }
+// converting line string into int
+        // stringstream(line) >> total;
+        // cout << line << endl;
+        // cout << total +1 << endl;
